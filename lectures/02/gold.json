@@ -1,0 +1,143 @@
+{
+  "GPU 計算機へ入るときに経由するホストはどれですか": {
+    "needs_review": false,
+    "must_include": [
+      "VPN",
+      "gpu-gateway.example.invalid"
+    ]
+  },
+  "学外ネットワークから GPU サーバーへ入る経路を教えてください": {
+    "needs_review": false,
+    "must_include": [
+      "VPN",
+      "gpu-gateway.example.invalid"
+    ]
+  },
+  "SSH 接続先の踏み台名は何ですか": {
+    "needs_review": false,
+    "must_include": [
+      "VPN",
+      "gpu-gateway.example.invalid"
+    ]
+  },
+  "GPU を使う sbatch の指定は何ですか": {
+    "needs_review": false,
+    "must_include": [
+      "sbatch",
+      "gres=gpu:1"
+    ]
+  },
+  "GPU 1 基を確保するジョブスクリプトの書き方は？": {
+    "needs_review": false,
+    "must_include": [
+      "sbatch",
+      "gres=gpu:1"
+    ]
+  },
+  "ジョブ投入コマンドと GPU 指定を教えてください": {
+    "needs_review": false,
+    "must_include": [
+      "sbatch",
+      "gres=gpu:1"
+    ]
+  },
+  "12 時間を超えたジョブは継続しますか": {
+    "needs_review": false,
+    "must_include": [
+      "12 時間",
+      "自動終了"
+    ]
+  },
+  "計算を連続実行できる上限時間は？": {
+    "needs_review": false,
+    "must_include": [
+      "12 時間",
+      "自動終了"
+    ]
+  },
+  "制限時間に達した処理はどうなりますか": {
+    "needs_review": false,
+    "must_include": [
+      "12 時間",
+      "自動終了"
+    ]
+  },
+  "ホームと一時領域の保存ルールはどうなっていますか": {
+    "needs_review": false,
+    "must_include": [
+      "50 GB",
+      "30 日"
+    ]
+  },
+  "ホームディレクトリのクォータと scratch の削除条件は？": {
+    "needs_review": false,
+    "must_include": [
+      "50 GB",
+      "30 日"
+    ]
+  },
+  "一時ファイルは何日アクセスしないと消えますか": {
+    "needs_review": false,
+    "must_include": [
+      "50 GB",
+      "30 日"
+    ]
+  },
+  "障害報告の宛先と必要な情報を教えてください": {
+    "needs_review": false,
+    "must_include": [
+      "gpu-admin@example.invalid",
+      "ジョブ ID"
+    ]
+  },
+  "計算機トラブルの報告メールには何を含めますか": {
+    "needs_review": false,
+    "must_include": [
+      "gpu-admin@example.invalid",
+      "ジョブ ID"
+    ]
+  },
+  "エラーログを送る管理者のメールアドレスは？": {
+    "needs_review": false,
+    "must_include": [
+      "gpu-admin@example.invalid",
+      "ジョブ ID"
+    ]
+  },
+  "GPU の利用料金はいくらですか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "メンテナンス日はいつですか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "CUDA の推奨バージョンは何ですか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "夜間だけ使える割引キューはありますか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "共有データを外部クラウドへ同期してよいですか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "アカウントの有効期限はいつですか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  }
+}
