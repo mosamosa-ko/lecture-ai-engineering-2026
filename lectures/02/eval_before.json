@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "label": "before",
+    "n": 21,
+    "format_rate": 0.047619047619047616,
+    "content_rate": 0.0,
+    "both_rate": 0.0,
+    "seconds": 34.8
+  },
+  "rows": [
+    {
+      "question": "GPU 計算機へ入るときに経由するホストはどれですか",
+      "raw": "{\"answer\": \"gpu-gateway.example.invalid\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "学外ネットワークから GPU サーバーへ入る経路を教えてください",
+      "raw": "{\"answer\": \"学外ネットワークから GPU サーバーへ入る経路は、学内 VPN 接続後、踏み台ホスト gpu-gateway.example.invalid を経由して SSH で接続します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "SSH 接続先の踏み台名は何ですか",
+      "raw": "{\"answer\": \"gpu-gateway.example.invalid\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "GPU を使う sbatch の指定は何ですか",
+      "raw": "{\"answer\": \"gres=gpu:1\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "GPU 1 基を確保するジョブスクリプトの書き方は？",
+      "raw": "{\"answer\": \"gres=gpu:1\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ジョブ投入コマンドと GPU 指定を教えてください",
+      "raw": "{\"answer\": \"sudo slurm submit -n 1 -o gres=gpu:1\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "12 時間を超えたジョブは継続しますか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "計算を連続実行できる上限時間は？",
+      "raw": "{\"answer\": \"12 時間\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "制限時間に達した処理はどうなりますか",
+      "raw": "{\"answer\": \"超過したジョブは自動終了します\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ホームと一時領域の保存ルールはどうなっていますか",
+      "raw": "{\"answer\": \"ホーム領域は 50 GB の上限で、一時領域は scratch 領域に置き、最終アクセスから 30 日後に削除されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ホームディレクトリのクォータと scratch の削除条件は？",
+      "raw": "{\"answer\": \"ホームディレクトリのクォータは 50 GB です。scratch の削除条件は最終アクセスから 30 日後に削除されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "一時ファイルは何日アクセスしないと消えますか",
+      "raw": "{\"answer\": \"30\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "障害報告の宛先と必要な情報を教えてください",
+      "raw": "{\"answer\": \"gpu-admin@example.invalid\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "計算機トラブルの報告メールには何を含めますか",
+      "raw": "{\"answer\": \"ジョブ ID とエラーログ\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "エラーログを送る管理者のメールアドレスは？",
+      "raw": "{\"answer\": \"gpu-admin@example.invalid\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "GPU の利用料金はいくらですか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "メンテナンス日はいつですか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "CUDA の推奨バージョンは何ですか",
+      "raw": "{\"answer\": \"CUDA 11.8\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "夜間だけ使える割引キューはありますか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "共有データを外部クラウドへ同期してよいですか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "アカウントの有効期限はいつですか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ]
+}
