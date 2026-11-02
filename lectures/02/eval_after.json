@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "label": "after",
+    "n": 21,
+    "format_rate": 1.0,
+    "content_rate": 1.0,
+    "both_rate": 1.0,
+    "seconds": 44.7
+  },
+  "rows": [
+    {
+      "question": "GPU 計算機へ入るときに経由するホストはどれですか",
+      "raw": "{\"answer\": \"GPU サーバーには学内 VPN 接続後、踏み台ホスト gpu-gateway.example.invalid を経由して SSH で接続します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "学外ネットワークから GPU サーバーへ入る経路を教えてください",
+      "raw": "{\"answer\": \"GPU サーバーには学内 VPN 接続後、踏み台ホスト gpu-gateway.example.invalid を経由して SSH で接続します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "SSH 接続先の踏み台名は何ですか",
+      "raw": "{\"answer\": \"GPU サーバーには学内 VPN 接続後、踏み台ホスト gpu-gateway.example.invalid を経由して SSH で接続します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "GPU を使う sbatch の指定は何ですか",
+      "raw": "{\"answer\": \"GPU ジョブは Slurm の sbatch で投入し、ジョブスクリプトで gres=gpu:1 を指定します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "GPU 1 基を確保するジョブスクリプトの書き方は？",
+      "raw": "{\"answer\": \"GPU ジョブは Slurm の sbatch で投入し、ジョブスクリプトで gres=gpu:1 を指定します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ジョブ投入コマンドと GPU 指定を教えてください",
+      "raw": "{\"answer\": \"GPU ジョブは Slurm の sbatch で投入し、ジョブスクリプトで gres=gpu:1 を指定します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "12 時間を超えたジョブは継続しますか",
+      "raw": "{\"answer\": \"1 ジョブの実行時間は最大 12 時間で、超過したジョブは自動終了します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "計算を連続実行できる上限時間は？",
+      "raw": "{\"answer\": \"1 ジョブの実行時間は最大 12 時間で、超過したジョブは自動終了します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "制限時間に達した処理はどうなりますか",
+      "raw": "{\"answer\": \"1 ジョブの実行時間は最大 12 時間で、超過したジョブは自動終了します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ホームと一時領域の保存ルールはどうなっていますか",
+      "raw": "{\"answer\": \"ホーム領域の上限は 50 GB です。一時データは scratch 領域に置き、最終アクセスから 30 日後に削除されます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ホームディレクトリのクォータと scratch の削除条件は？",
+      "raw": "{\"answer\": \"ホーム領域の上限は 50 GB です。一時データは scratch 領域に置き、最終アクセスから 30 日後に削除されます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "一時ファイルは何日アクセスしないと消えますか",
+      "raw": "{\"answer\": \"ホーム領域の上限は 50 GB です。一時データは scratch 領域に置き、最終アクセスから 30 日後に削除されます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "障害報告の宛先と必要な情報を教えてください",
+      "raw": "{\"answer\": \"障害時はジョブ ID とエラーログを添えて gpu-admin@example.invalid へ連絡します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "計算機トラブルの報告メールには何を含めますか",
+      "raw": "{\"answer\": \"障害時はジョブ ID とエラーログを添えて gpu-admin@example.invalid へ連絡します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "エラーログを送る管理者のメールアドレスは？",
+      "raw": "{\"answer\": \"障害時はジョブ ID とエラーログを添えて gpu-admin@example.invalid へ連絡します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "GPU の利用料金はいくらですか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。サーバー管理者に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "メンテナンス日はいつですか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。サーバー管理者に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "CUDA の推奨バージョンは何ですか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。サーバー管理者に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "夜間だけ使える割引キューはありますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。サーバー管理者に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "共有データを外部クラウドへ同期してよいですか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。サーバー管理者に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "アカウントの有効期限はいつですか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。サーバー管理者に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    }
+  ]
+}
